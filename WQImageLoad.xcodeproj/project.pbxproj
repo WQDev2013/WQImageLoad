@@ -15,6 +15,12 @@
 		806CEDEF212CF2C50051ED93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 806CEDEE212CF2C50051ED93 /* main.m */; };
 		806CEDF9212CF2C50051ED93 /* WQImageLoadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806CEDF8212CF2C50051ED93 /* WQImageLoadTests.m */; };
 		806CEE04212CF2C50051ED93 /* WQImageLoadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806CEE03212CF2C50051ED93 /* WQImageLoadUITests.m */; };
+		806CEE13212CF73A0051ED93 /* WQImageLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806CEE12212CF73A0051ED93 /* WQImageLoadViewController.m */; };
+		806CEE16212D18090051ED93 /* timg.png in Resources */ = {isa = PBXBuildFile; fileRef = 806CEE15212D18090051ED93 /* timg.png */; };
+		806CEE19212D1BEF0051ED93 /* GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 806CEE18212D1BEF0051ED93 /* GoodsTableViewCell.m */; };
+		806CEE1C212E8CE40051ED93 /* WQAFNLoadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806CEE1B212E8CE40051ED93 /* WQAFNLoadImageViewController.m */; };
+		806CEE1F212E92FB0051ED93 /* WQAFNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 806CEE1E212E92FB0051ED93 /* WQAFNManager.m */; };
+		AFAB5AFF431FB1DE0B28636C /* libPods-WQImageLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48453DE15D68DB3EA78ED076 /* libPods-WQImageLoad.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48453DE15D68DB3EA78ED076 /* libPods-WQImageLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQImageLoad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		806CEDDC212CF2C30051ED93 /* WQImageLoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WQImageLoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806CEDDF212CF2C30051ED93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		806CEDE0212CF2C30051ED93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,18 @@
 		806CEDFF212CF2C50051ED93 /* WQImageLoadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQImageLoadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		806CEE03212CF2C50051ED93 /* WQImageLoadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQImageLoadUITests.m; sourceTree = "<group>"; };
 		806CEE05212CF2C60051ED93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806CEE11212CF73A0051ED93 /* WQImageLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQImageLoadViewController.h; sourceTree = "<group>"; };
+		806CEE12212CF73A0051ED93 /* WQImageLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQImageLoadViewController.m; sourceTree = "<group>"; };
+		806CEE14212CFE4D0051ED93 /* WQPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQPrefixHeader.pch; sourceTree = "<group>"; };
+		806CEE15212D18090051ED93 /* timg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timg.png; sourceTree = "<group>"; };
+		806CEE17212D1BEF0051ED93 /* GoodsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsTableViewCell.h; sourceTree = "<group>"; };
+		806CEE18212D1BEF0051ED93 /* GoodsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsTableViewCell.m; sourceTree = "<group>"; };
+		806CEE1A212E8CE40051ED93 /* WQAFNLoadImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQAFNLoadImageViewController.h; sourceTree = "<group>"; };
+		806CEE1B212E8CE40051ED93 /* WQAFNLoadImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQAFNLoadImageViewController.m; sourceTree = "<group>"; };
+		806CEE1D212E92FB0051ED93 /* WQAFNManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQAFNManager.h; sourceTree = "<group>"; };
+		806CEE1E212E92FB0051ED93 /* WQAFNManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQAFNManager.m; sourceTree = "<group>"; };
+		E3ADBA38BE4C1617BD88EA92 /* Pods-WQImageLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQImageLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-WQImageLoad/Pods-WQImageLoad.release.xcconfig"; sourceTree = "<group>"; };
+		FE93E0F2420A946403EE2070 /* Pods-WQImageLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQImageLoad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WQImageLoad/Pods-WQImageLoad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAB5AFF431FB1DE0B28636C /* libPods-WQImageLoad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E83E724B95F168E92C71C31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE93E0F2420A946403EE2070 /* Pods-WQImageLoad.debug.xcconfig */,
+				E3ADBA38BE4C1617BD88EA92 /* Pods-WQImageLoad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		806CEDD3212CF2C30051ED93 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				806CEDF7212CF2C50051ED93 /* WQImageLoadTests */,
 				806CEE02212CF2C50051ED93 /* WQImageLoadUITests */,
 				806CEDDD212CF2C30051ED93 /* Products */,
+				6E83E724B95F168E92C71C31 /* Pods */,
+				AE363EE3E690FDBC79169FDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +132,25 @@
 		806CEDDE212CF2C30051ED93 /* WQImageLoad */ = {
 			isa = PBXGroup;
 			children = (
+				806CEE15212D18090051ED93 /* timg.png */,
 				806CEDDF212CF2C30051ED93 /* AppDelegate.h */,
 				806CEDE0212CF2C30051ED93 /* AppDelegate.m */,
 				806CEDE2212CF2C30051ED93 /* ViewController.h */,
 				806CEDE3212CF2C30051ED93 /* ViewController.m */,
+				806CEE11212CF73A0051ED93 /* WQImageLoadViewController.h */,
+				806CEE12212CF73A0051ED93 /* WQImageLoadViewController.m */,
+				806CEE1A212E8CE40051ED93 /* WQAFNLoadImageViewController.h */,
+				806CEE1B212E8CE40051ED93 /* WQAFNLoadImageViewController.m */,
+				806CEE17212D1BEF0051ED93 /* GoodsTableViewCell.h */,
+				806CEE18212D1BEF0051ED93 /* GoodsTableViewCell.m */,
+				806CEE1D212E92FB0051ED93 /* WQAFNManager.h */,
+				806CEE1E212E92FB0051ED93 /* WQAFNManager.m */,
 				806CEDE5212CF2C30051ED93 /* Main.storyboard */,
 				806CEDE8212CF2C50051ED93 /* Assets.xcassets */,
 				806CEDEA212CF2C50051ED93 /* LaunchScreen.storyboard */,
 				806CEDED212CF2C50051ED93 /* Info.plist */,
 				806CEDEE212CF2C50051ED93 /* main.m */,
+				806CEE14212CFE4D0051ED93 /* WQPrefixHeader.pch */,
 			);
 			path = WQImageLoad;
 			sourceTree = "<group>";
@@ -132,6 +173,14 @@
 			path = WQImageLoadUITests;
 			sourceTree = "<group>";
 		};
+		AE363EE3E690FDBC79169FDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48453DE15D68DB3EA78ED076 /* libPods-WQImageLoad.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 806CEE08212CF2C60051ED93 /* Build configuration list for PBXNativeTarget "WQImageLoad" */;
 			buildPhases = (
+				B9E3D97E9BA9A3EACA1E7453 /* [CP] Check Pods Manifest.lock */,
 				806CEDD8212CF2C30051ED93 /* Sources */,
 				806CEDD9212CF2C30051ED93 /* Frameworks */,
 				806CEDDA212CF2C30051ED93 /* Resources */,
@@ -235,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806CEE16212D18090051ED93 /* timg.png in Resources */,
 				806CEDEC212CF2C50051ED93 /* LaunchScreen.storyboard in Resources */,
 				806CEDE9212CF2C50051ED93 /* Assets.xcassets in Resources */,
 				806CEDE7212CF2C30051ED93 /* Main.storyboard in Resources */,
@@ -257,13 +308,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9E3D97E9BA9A3EACA1E7453 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WQImageLoad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		806CEDD8212CF2C30051ED93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806CEE13212CF73A0051ED93 /* WQImageLoadViewController.m in Sources */,
+				806CEE19212D1BEF0051ED93 /* GoodsTableViewCell.m in Sources */,
+				806CEE1F212E92FB0051ED93 /* WQAFNManager.m in Sources */,
 				806CEDE4212CF2C30051ED93 /* ViewController.m in Sources */,
 				806CEDEF212CF2C50051ED93 /* main.m in Sources */,
+				806CEE1C212E8CE40051ED93 /* WQAFNLoadImageViewController.m in Sources */,
 				806CEDE1212CF2C30051ED93 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,9 +507,11 @@
 		};
 		806CEE09212CF2C60051ED93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE93E0F2420A946403EE2070 /* Pods-WQImageLoad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WQImageLoad/WQPrefixHeader.pch";
 				INFOPLIST_FILE = WQImageLoad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +525,11 @@
 		};
 		806CEE0A212CF2C60051ED93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3ADBA38BE4C1617BD88EA92 /* Pods-WQImageLoad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WQImageLoad/WQPrefixHeader.pch";
 				INFOPLIST_FILE = WQImageLoad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

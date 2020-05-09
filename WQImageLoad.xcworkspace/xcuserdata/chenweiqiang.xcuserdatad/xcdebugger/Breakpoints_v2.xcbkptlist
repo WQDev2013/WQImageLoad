@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CC822206-1684-4F82-952F-7D021E3AC4CD"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0ECD0085-7416-4FE4-9871-9E377C4AEA9B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WQImageLoad/WQAFNManager.m"
+            timestampString = "573055559.521106"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+downloadFileBackgroundWithURLString:cachePath:progress:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61633708-F6C3-4472-A6A1-BA34E6E44576"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WQImageLoad/WQAFNManager.m"
+            timestampString = "573055559.521524"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "+downloadFileBackgroundWithURLString:cachePath:progress:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57C938D6-B72C-4687-B465-A55583E379E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WQImageLoad/WQAFNManager.m"
+            timestampString = "573055559.521773"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "+downloadFileBackgroundWithURLString:cachePath:progress:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "57C938D6-B72C-4687-B465-A55583E379E3 - a1be911e58558cd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[WQAFNManager downloadFileBackgroundWithURLString:cachePath:progress:success:failure:]"
+                  moduleName = "WQImageLoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenweiqiang/Documents/MyProject20180513/WQImageLoad/WQImageLoad/WQAFNManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1207">
+               </Location>
+               <Location
+                  uuid = "57C938D6-B72C-4687-B465-A55583E379E3 - fb0e77e7c439649d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__87+[WQAFNManager downloadFileBackgroundWithURLString:cachePath:progress:success:failure:]_block_invoke.36"
+                  moduleName = "WQImageLoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenweiqiang/Documents/MyProject20180513/WQImageLoad/WQImageLoad/WQAFNManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEE922EE-02F7-4BB7-A791-30097922249C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WQImageLoad/WQAFNManager.m"
+            timestampString = "573055559.521992"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "+downloadFileBackgroundWithURLString:cachePath:progress:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

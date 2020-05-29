@@ -55,14 +55,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "57C938D6-B72C-4687-B465-A55583E379E3 - a1be911e58558cd0"
+                  uuid = "57C938D6-B72C-4687-B465-A55583E379E3 - 96a895a295182481"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "+[WQAFNManager downloadFileBackgroundWithURLString:cachePath:progress:success:failure:]"
                   moduleName = "WQImageLoad"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenweiqiang/Documents/MyProject20180513/WQImageLoad/WQImageLoad/WQAFNManager.m"
+                  urlString = "file:///Users/chenweiqiang/WQGitHubDemo/WQImageLoad/WQImageLoad/WQAFNManager.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
@@ -70,14 +70,14 @@
                   offsetFromSymbolStart = "1207">
                </Location>
                <Location
-                  uuid = "57C938D6-B72C-4687-B465-A55583E379E3 - fb0e77e7c439649d"
+                  uuid = "57C938D6-B72C-4687-B465-A55583E379E3 - cc18735b0974cccc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__87+[WQAFNManager downloadFileBackgroundWithURLString:cachePath:progress:success:failure:]_block_invoke.36"
                   moduleName = "WQImageLoad"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenweiqiang/Documents/MyProject20180513/WQImageLoad/WQImageLoad/WQAFNManager.m"
+                  urlString = "file:///Users/chenweiqiang/WQGitHubDemo/WQImageLoad/WQImageLoad/WQAFNManager.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"

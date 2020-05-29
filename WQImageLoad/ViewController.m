@@ -17,28 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSString *urlString = @"pamoclient://mo-videomeetinglist://records";
-//    urlString = [urlString substringFromIndex:[urlString rangeOfString:@"pamoclient://"].length];
-//
-//    NSRange range = [urlString rangeOfString:@"//"];
-//    urlString = [urlString stringByReplacingCharactersInRange:range withString:@"://"];
-    
-    
-//    NSString *urlString = @"mo-videomeetinglist://records?title=收到";
-//    urlString = [urlString substringFromIndex:[urlString rangeOfString:@"pamoclient://"].length];
-//
-//    NSRange range = [urlString rangeOfString:@"//"];
-//    urlString = [urlString stringByReplacingCharactersInRange:range withString:@"://"];
-    
-//    NSString *urlString = @"pamoclient://mo-chat://chat?jid=100000002740001&type=friends&title=芦华&umId=HUANGYUAN816";
-//    urlString = [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSString *urlString2 = @"mo-chat://chat?jid=100000002740001&type=friends&title=芦华&umId=HUANGYUAN816";
-//    urlString2 = [urlString2 stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSURL *url = [NSURL URLWithString:urlString];
-//    NSURL *url2 = [NSURL URLWithString:urlString2];
-    NSString *str = @"h";
-    NSRange range = [str rangeOfString:@"http://"];
-    NSLog(@"");
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -28,7 +28,16 @@
 
 @implementation WQImageLoadViewController
 
-
+- (void)dealloc {
+    NSLog(@"WQImageLoadViewController dealloc");
+}
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    for (GoodsTableViewCell* cell in self.tableView.visibleCells) {
+        [cell.headImageView sd_cancelCurrentAnimationImagesLoad];
+    }
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.queue = [[NSOperationQueue alloc] init];
@@ -69,67 +78,24 @@
     if (cell == nil) {
         cell = [[GoodsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCell];
     }
-    //1.
-//    self.sema = dispatch_semaphore_create(0);
-//    [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.dataArray[indexPath.row]] placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-////        NSLog(@"%ld行的进度%f",indexPath.row,receivedSize*1.0/expectedSize);
-//    } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-//        NSLog(@"完成%ld",indexPath.row);
-//        dispatch_semaphore_signal(self.sema);
-//    }];
-//    dispatch_semaphore_wait(self.sema, DISPATCH_TIME_FOREVER);
-    
-    
-    //2.不能控制的方法
-//    NSBlockOperation *eocOperation = [[NSBlockOperation alloc] init];
-//    [eocOperation addExecutionBlock:^{
+
+    [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.dataArray[indexPath.row]]];
+//    dispatch_async(self.serialQueue, ^{
+//        dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
 //        [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.dataArray[indexPath.row]] placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
 //    //        NSLog(@"%ld行的进度%f",indexPath.row,receivedSize*1.0/expectedSize);
 //        } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //            NSLog(@"完成%ld",indexPath.row);
-//        }];
-//    }];
-//    [self.queue addOperation:eocOperation];
-  
-    //3.
-//    NSString *rowString = [NSString stringWithFormat:@"%ld",indexPath.row];
-//    NSMethodSignature *signture = [self methodSignatureForSelector:@selector(loadImage:andIndexPath:)];
-//    NSInvocation *invation = [NSInvocation invocationWithMethodSignature:signture];
-//    invation.target = self;
-//    invation.selector = @selector(loadImage:andIndexPath:); //和签名的seletor要对应起来
-//    [invation setArgument:(__bridge void *)cell.headImageView atIndex:2];
-//    [invation setArgument:&rowString atIndex:3];
+//            dispatch_semaphore_signal(self.semaphore);
 //
-//    NSInvocationOperation* invocationOperation = [[NSInvocationOperation alloc] initWithInvocation:invation];
-//    [self.queue addOperation:invocationOperation];
-    
-    //4.
-    dispatch_async(self.serialQueue, ^{
-        dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
-        [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.dataArray[indexPath.row]] placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-    //        NSLog(@"%ld行的进度%f",indexPath.row,receivedSize*1.0/expectedSize);
-        } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-            NSLog(@"完成%ld",indexPath.row);
-            dispatch_semaphore_signal(self.semaphore);
-            
-        }];
-        
-    });
+//        }];
+//
+//    });
     
     cell.titleLabel.text = [NSString stringWithFormat:@"行%ld",indexPath.row];
     return cell;
 }
 
-//- (void)loadImage:(UIImageView*)imgView andIndexPath:(NSString*)indexPath
-//{
-//    NSUInteger row = [indexPath integerValue];
-//    NSURL *url = [NSURL URLWithString:self.dataArray[row]];
-//    [imgView sd_setImageWithURL:url placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-////        NSLog(@"%ld行的进度%f",indexPath.row,receivedSize*1.0/expectedSize);
-//    } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-//        NSLog(@"完成%ld",row);
-//    }];
-//}
 
 - (UITableView *)tableView
 {
@@ -148,7 +114,13 @@
                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534918376192&di=4b36a6605d3c5d17959b199429775f4e&imgtype=0&src=http%3A%2F%2Fpic23.photophoto.cn%2F20120503%2F0034034456597026_b.jpg",
                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534922390841&di=da6bb554b76f440e89c917f89b71d4fa&imgtype=0&src=http%3A%2F%2Ffile06.16sucai.com%2F2016%2F0715%2Fb60faf820303a54e9226dcbf4429cf3f.jpg",
                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534921222921&di=5a4a3753a8932dd0556c0ceff8bb5a19&imgtype=0&src=http%3A%2F%2Fpic5.photophoto.cn%2F20071228%2F0034034901778224_b.jpg",
-                      @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534921222921&di=d1f999f381093ae10c324cf0176d8d23&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201706%2F09%2Feb84aab0b8ad42cd4b6cc9bbf70ec5a7.jpg",
+                      @"http://pic.netbian.com/uploads/allimg/180315/110404-1521083044b19d.jpg",
+                      @"http://pic.netbian.com/uploads/allimg/200509/122003-1588998003e2dc.jpg",
+                      @"http://pic.netbian.com/uploads/allimg/191121/224644-1574347604d36e.jpg",
+                      @"http://pic.netbian.com/uploads/allimg/170725/103840-150095032034c0.jpg",
+                      @"http://pic.netbian.com/uploads/allimg/200224/200251-15825457711dd7.jpg",
+                      @"http://pic.netbian.com/uploads/allimg/191221/210540-15769335402e83.jpg",
+                      @"http://pic.netbian.com/uploads/allimg/200118/170952-15793385928346.jpg",
                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534921222921&di=daeece36a7f9a7d5424b40750393adbb&imgtype=0&src=http%3A%2F%2Fpic9.photophoto.cn%2F20081229%2F0034034829945374_b.jpg",
                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534921222920&di=0cc95bc3f65a04953ccc5b488d1ad5ee&imgtype=0&src=http%3A%2F%2Fpic32.photophoto.cn%2F20140817%2F0034034463193076_b.jpg",
                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534921222920&di=f7ac6321f38aedd30379832438779718&imgtype=0&src=http%3A%2F%2Ffile06.16sucai.com%2F2016%2F0518%2F8afcf55356494abfda0537fd5ccf8696.jpg",

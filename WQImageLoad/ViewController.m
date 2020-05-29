@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -31,7 +31,9 @@
     [self.navigationController pushViewController:vc animated:YES];
     
 }
-
+- (void)test {
+    
+}
 //
 //- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 //
